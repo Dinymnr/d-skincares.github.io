@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d,skincare - Skincare Remaja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="assets/backsound.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>d,skincare</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#checkout">Checkout</a>
+        </nav>
+    </header>
+
+    <section id="home" class="slider">
+        <div class="slides">
+            <img src="assets/slide1.jpg" alt="Skincare 1">
+            <img src="assets/slide2.jpg" alt="Skincare 2">
+            <img src="assets/slide3.jpg" alt="Skincare 3">
+        </div>
+    </section>
+
+    <section id="produk">
+        <h2>Produk Terbaru</h2>
+        <div class="produk-list">
+            <div class="produk">
+                <img src="assets/produk1.jpg" alt="Produk 1">
+                <h3>Face Wash Remaja</h3>
+                <p>Rp 25.000</p>
+                <button onclick="addToCart('Face Wash Remaja', 25000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="produk">
+                <img src="assets/produk2.jpg" alt="Produk 2">
+                <h3>Moisturizer</h3>
+                <p>Rp 35.000</p>
+                <button onclick="addToCart('Moisturizer', 35000)">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkout">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart"></ul>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>© 2025 d,skincare</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
